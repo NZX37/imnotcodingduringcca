@@ -1,4 +1,4 @@
-         * {
+* {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
@@ -80,17 +80,6 @@
       text-align: center;
       margin-top: 20px;
       color: #666;
-    }
-    
-    .toggle-auth a {
-      color: #667eea;
-      cursor: pointer;
-      text-decoration: none;
-      font-weight: 600;
-    }
-    
-    .toggle-auth a:hover {
-      text-decoration: underline;
     }
     
     .message {
