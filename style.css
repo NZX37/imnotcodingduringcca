@@ -1,3 +1,235 @@
+         * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    
+    .auth-container, .app-container {
+      max-width: 600px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 12px;
+      padding: 30px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+    }
+
+    .subtitle {
+      text-align: center;
+      color: #666;
+      margin-bottom: 30px;
+      font-size: 0.95em;
+    }
+    
+    .form-group {
+      margin-bottom: 15px;
+    }
+    
+    label {
+      display: block;
+      margin-bottom: 5px;
+      color: #555;
+      font-weight: 500;
+    }
+    
+    input[type="text"], input[type="password"], textarea {
+      width: 100%;
+      padding: 12px;
+      border: 2px solid #e0e0e0;
+      border-radius: 8px;
+      font-size: 1em;
+      transition: border-color 0.3s;
+    }
+    
+    input:focus, textarea:focus {
+      outline: none;
+      border-color: #667eea;
+    }
+    
+    textarea {
+      resize: vertical;
+      min-height: 80px;
+      font-family: inherit;
+    }
+    
+    button {
+      width: 100%;
+      padding: 12px;
+      background: #0022dd;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 1em;
+      font-weight: 600;
+      cursor: pointer;
+      transition: transform 0.2s, box-shadow 0.2s;
+      margin-top: 10px;
+    }
+    
+    button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+    }
+    
+    button:disabled {
+      background: #ccc;
+      cursor: not-allowed;
+      transform: none;
+    }
+    
+    .toggle-auth {
+      text-align: center;
+      margin-top: 20px;
+      color: #666;
+    }
+    
+    .toggle-auth a {
+      color: #667eea;
+      cursor: pointer;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    
+    .toggle-auth a:hover {
+      text-decoration: underline;
+    }
+    
+    .message {
+      background: #f8f9fa;
+      border-left: 4px solid #667eea;
+      border-radius: 8px;
+      padding: 15px;
+      margin-bottom: 12px;
+    }
+    
+    .message-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 8px;
+    }
+    
+    .username {
+      font-weight: 700;
+      color: #667eea;
+      font-size: 0.95em;
+    }
+    
+    .timestamp {
+      font-size: 0.85em;
+      color: #999;
+    }
+    
+    .message-text {
+      color: #333;
+      line-height: 1.5;
+      word-wrap: break-word;
+    }
+    
+    .user-info {
+      background: #f0f0f0;
+      padding: 10px 15px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .user-info span {
+      color: #555;
+      font-weight: 500;
+    }
+    
+    .logout-btn {
+      background: #dc3545;
+      padding: 6px 12px;
+      font-size: 0.9em;
+      width: auto;
+      margin: 0;
+    }
+    
+    .logout-btn:hover {
+      background: #c82333;
+    }
+    
+    .messages-container {
+      max-height: 500px;
+      overflow-y: auto;
+      margin-top: 20px;
+    }
+    
+    .error {
+      background: #fee;
+      border: 1px solid #fcc;
+      color: #c00;
+      padding: 10px;
+      border-radius: 6px;
+      margin-bottom: 15px;
+    }
+    
+    .hidden {
+      display: none;
+    }
+
+  /* Design Modified from: Deepak Pathak, Jon Barron, and Saurabh Gupta. */
+  a {
+  color: #1772d0;
+  text-decoration:none;
+  }
+  a:focus, a:hover {
+  color: #f09228;
+  text-decoration:none;
+  }
+  body,td,th {
+    font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 400
+  }
+  heading {
+    font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
+    font-size: 17px; /* 19 */
+    font-weight: 600 /* 1000 */
+  }
+  hr
+  {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+  }
+  strong {
+    font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
+    font-size: 16px;
+    font-weight: 600 /* 800 */
+  }
+  strongred {
+    font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
+    color: 'red' ;
+    font-size: 16px
+  }
+  sectionheading {
+    font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
+    font-size: 22px;
+    font-weight: 600
+  }
+  pageheading {
+    font-family: 'Titillium Web', Verdana, Helvetica, sans-serif;
+    font-size: 38px;
+    font-weight: 400
+  }
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+  }
+  .ImageBorder
+  {
+      border-width: 1px;
+      border-color: Black;
+  }
+  span.highlight {
+  background-color: #ffffd0;
+  }
       :root {
       --bg: #0b0b0b;
       --panel: #111;
